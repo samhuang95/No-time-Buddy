@@ -6,17 +6,22 @@
         xmlns:local="clr-namespace:No_time_Buddy"
         mc:Ignorable="d"
         Title="No time Buddy!" Height="450" Width="400"
-        Background="#FF9797"
+        Background="#004B97" Icon="/logo.png"
         >
+
     <Window.Resources>
         <local:DaysLeftConverter x:Key="DaysLeftConverter"/>
     </Window.Resources>
     <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="389*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" HorizontalAlignment="Left" Height="29" Margin="118,23,0,0" TextWrapping="Wrap" Text="" Name="missionTitle" VerticalAlignment="Top" Width="228">
+        <TextBox Grid.Row="0" HorizontalAlignment="Left" Height="29" Margin="107,23,0,0" TextWrapping="Wrap" Text="" Name="missionTitle" VerticalAlignment="Top" Width="228" Grid.Column="1">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -49,10 +54,10 @@
             </TextBox.Style>
         </TextBox>
 
-        <DatePicker Grid.Row="0" Margin="118,71,144,0" VerticalAlignment="Top" Name="CalendarDatePicker" Width="135"/>
-        <Button Grid.Row="0" Content="Save" Height="24" Margin="280,71,54,0" VerticalAlignment="Top" Click="saveButtonClick" Background="#FFC9C9C9" Width="65"/>
+        <DatePicker Grid.Row="0" Margin="95,71,110,0" VerticalAlignment="Top" Name="CalendarDatePicker" Width="150" Grid.Column="1"/>
+        <Button Grid.Row="0" Content="Save" Height="24" Margin="275,71,40,0" VerticalAlignment="Top" Click="saveButtonClick" Background="#ffbe58" Width="60" Grid.Column="1" />
 
-        <ListView Grid.Row="1" Name="MissionListView" Margin="10,0">
+        <ListView Grid.Row="1" Name="MissionListView" Margin="10,0,10,0" Grid.ColumnSpan="2">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -61,8 +66,8 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Border Background="AliceBlue" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,10,10" Padding="20">
-                            <TextBlock Text="{Binding MissionDeadline, Converter={StaticResource DaysLeftConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Border Background="AliceBlue" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,10,10" Padding="10">
+                            <TextBlock Text="{Binding MissionDeadline, Converter={StaticResource DaysLeftConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
                         </Border>
                         <TextBlock Grid.Column="1" Text="{Binding MissionTitle}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,10,0"/>
                         <Button Grid.Column="2" Tag="{Binding MissionId}" Content="×" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CancelButtonClick" Background="Transparent" BorderBrush="Transparent"/>
@@ -71,8 +76,8 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Height="24" Margin="10,28,0,0" TextWrapping="Wrap" Text="Mission Title" VerticalAlignment="Top" Width="103" FlowDirection="RightToLeft" FontWeight="Bold" TextAlignment="Left"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Height="28" Margin="10,77,0,0" TextWrapping="Wrap" Text="Deadline" VerticalAlignment="Top" Width="103" FlowDirection="RightToLeft" FontWeight="Bold" TextAlignment="Left"/>
-        
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Height="24" Margin="10,28,0,0" TextWrapping="Wrap" Text="Mission Title" VerticalAlignment="Top" Width="103" FlowDirection="RightToLeft" FontWeight="Bold" TextAlignment="Left" Foreground="AliceBlue" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Height="28" Margin="10,77,0,0" TextWrapping="Wrap" Text="Deadline" VerticalAlignment="Top" Width="103" FlowDirection="RightToLeft" FontWeight="Bold" TextAlignment="Left" Foreground="AliceBlue" Grid.ColumnSpan="2" />
+
     </Grid>
 </Window>
