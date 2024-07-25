@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\No-time-Buddy.csproj": {}
+    "C:\\Users\\user\\Downloads\\No-time-Buddy\\No-time-Buddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\No-time-Buddy.csproj": {
+    "C:\\Users\\user\\Downloads\\No-time-Buddy\\No-time-Buddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\No-time-Buddy.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Downloads\\No-time-Buddy\\No-time-Buddy.csproj",
         "projectName": "No-time-Buddy",
-        "projectPath": "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\No-time-Buddy.csproj",
+        "projectPath": "C:\\Users\\user\\Downloads\\No-time-Buddy\\No-time-Buddy.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\obj\\",
+        "outputPath": "C:\\Users\\user\\Downloads\\No-time-Buddy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

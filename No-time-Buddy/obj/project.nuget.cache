@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KDZ8lhH9+9nTWIDkQmpx7Svwh+/jU7zP6YdkKvID57v8ItFWxGEWI3cUioO0ppS77X1E4XWeUqBVvdvBzO7atA==",
+  "dgSpecHash": "+p7iZ9yIOnh1NWxAMlpMUmQ2nfH1GO3ayM1PQ7vgteJXZNsgI3RNMBuqlE0T9EAaPQc9YvFSDcDIbSw3sv0uUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Dropbox\\All_Project\\No-time-Buddy\\No-time-Buddy\\No-time-Buddy.csproj",
+  "projectFilePath": "C:\\Users\\user\\Downloads\\No-time-Buddy\\No-time-Buddy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

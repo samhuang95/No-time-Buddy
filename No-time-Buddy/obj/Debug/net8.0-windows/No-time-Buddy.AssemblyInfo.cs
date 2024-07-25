@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("No-time-Buddy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7265a269766e1ce1a63cd9681df16f04672e9845")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("No-time-Buddy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("No-time-Buddy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
